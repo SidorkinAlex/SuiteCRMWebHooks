@@ -87,12 +87,15 @@ function getModuleFields(
                             continue;
                         }
                     }
-
+                    file_put_contents('test.log',var_export($arr,1));
+                    if($arr['name'] == 'value02') {
+                        file_put_contents('test1.log', var_export((!isset($arr['source']) || $arr['source'] !== 'non-db' || $arr['aow'] == 'show'), 1));
+                    }
                     if ($arr['type'] !== 'link'
                         && $name !== 'currency_name'
                         && $name !== 'currency_symbol'
                         && (empty($valid) || in_array($arr['type'], $valid))
-                        && ((!isset($arr['source']) || $arr['source'] !== 'non-db')
+                        && ((!isset($arr['source']) || $arr['source'] !== 'non-db' || $arr['aow'] == 'show')
                             || ($arr['type'] === 'relate' && isset($arr['id_name']))
                             || in_array($name, $override))
                         ) {
