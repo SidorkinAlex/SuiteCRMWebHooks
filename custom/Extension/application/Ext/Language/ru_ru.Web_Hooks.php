@@ -43,3 +43,5 @@ $app_list_strings['status_web_hook_list']['in_process'] = 'в процессе';
 $app_list_strings['status_web_hook_list']['ready_to_send'] = 'Готово для отправки';
 $app_list_strings['status_web_hook_list']['success'] = 'Выполнено';
 $app_list_strings['status_web_hook_list']['error'] = 'Ошибка';
+$app_list_strings['request_type_web_hook_list']['form_data'] = 'Form Data';
+$app_list_strings['request_type_web_hook_list']['json'] = 'JSON';
