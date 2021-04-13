@@ -38,10 +38,10 @@
  * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
 
-$app_list_strings['moduleList']['WEBH_HOOKS_REQUEST'] = 'Запрос Веб Хуков';
-$app_list_strings['status_web_hook_list']['in_process'] = 'в процессе';
-$app_list_strings['status_web_hook_list']['ready_to_send'] = 'Готово для отправки';
-$app_list_strings['status_web_hook_list']['success'] = 'Выполнено';
-$app_list_strings['status_web_hook_list']['error'] = 'Ошибка';
+$app_list_strings['moduleList']['WEBH_HOOKS_REQUEST'] = 'Web Hook Request';
+$app_list_strings['status_web_hook_list']['in_process'] = 'in process';
+$app_list_strings['status_web_hook_list']['ready_to_send'] = 'ready to send';
+$app_list_strings['status_web_hook_list']['success'] = 'success';
+$app_list_strings['status_web_hook_list']['error'] = 'error';
 $app_list_strings['request_type_web_hook_list']['form_data'] = 'Form Data';
 $app_list_strings['request_type_web_hook_list']['json'] = 'JSON';
