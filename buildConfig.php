@@ -34,6 +34,10 @@ $path_arr_for_build = array(
         'from' => 'custom/Extension/application/Ext/Language/ru_ru.Web_Hooks.php',
         'to' => 'SugarModules/language/application/ru_ru.lang.php',
     ),
+    array(
+        'from' => 'custom/Extension/modules/Administration',
+        'to' => 'SugarModules/custom/Extension/modules/Administration',
+    ),
 );
 
 return $path_arr_for_build;

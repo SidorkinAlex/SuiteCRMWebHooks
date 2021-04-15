@@ -99,6 +99,11 @@ $installdefs = array(
                     'from' => '<basepath>/SugarModules/modules/AOW_WorkFlow/aow_utils.php',
                     'to' => 'modules/AOW_WorkFlow/aow_utils.php',
                 ),
+            2 =>
+                array(
+                    'from' => '<basepath>/custom/Extension/modules/Administration',
+                    'to' => 'custom/Extension/modules/Administration',
+                ),
         ),
     'language' =>
         array(
