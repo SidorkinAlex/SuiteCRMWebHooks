@@ -1,75 +1,165 @@
-<a href="https://suitecrm.com">
-  <img width="180px" height="41px" src="https://suitecrm.com/wp-content/uploads/2017/12/logo.png" align="right" />
-</a>
+# Webhooks from SuiteCRM
 
-# SuiteCRM 7.10.29
+[Github](https://github.com/SidorkinAlex/SuiteCRMWebHooks) | 
+[Ru](#Вебхуки-для-SuiteCRM) |
+[En](#Webhooks-from-SuiteCRM)
 
-[![Build Status](https://travis-ci.org/salesagility/SuiteCRM.svg?branch=7.10.x)](https://travis-ci.org/salesagility/SuiteCRM)
-[![codecov](https://codecov.io/gh/salesagility/SuiteCRM/branch/7.10.x/graph/badge.svg)](https://codecov.io/gh/salesagility/SuiteCRM/branch/7.10.x)
-[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/suitecrm/Lobby)
-[![LICENSE](https://img.shields.io/github/license/suitecrm/suitecrm.svg)](https://github.com/salesagility/suitecrm/blob/master/LICENSE.txt)
-[![GitHub contributors](https://img.shields.io/github/contributors/salesagility/suitecrm)](https://github.com/salesagility/SuiteCRM/graphs/contributors)
-[![Twitter](https://img.shields.io/twitter/follow/suitecrm.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=suitecrm)
+![image](http://web-seedteam.ru/wp-content/uploads/2021/04/screenshot-0.0.0.0-2021.04.15-23_18_20.png)
+![image](http://web-seedteam.ru/wp-content/uploads/2021/04/screenshot-0.0.0.0-2021.04.15-23_43_05.png)
 
-[Website](https://suitecrm.com) | 
-[Demo](https://suitecrm.com/demo/) |
-[Maintainers](https://salesagility.com) |
-[Contributors](https://github.com/salesagility/SuiteCRM/graphs/contributors) |
-[Community & Forum](https://suitecrm.com/suitecrm/forum) |
-[Partners](https://suitecrm.com/about/about-us/partners/) |
-[Extensions Directory](https://store.suitecrm.com/) |
-[Translations](https://crowdin.com/project/suitecrmtranslations) | [Code of Conduct](https://docs.suitecrm.com/community/code-of-conduct/)
+## support the project
+https://yoomoney.ru/to/410013242088802
 
-[SuiteCRM](https://suitecrm.com) is the award-winning open-source, enterprise-ready Customer Relationship Management (CRM) software application.
-
-Our vision is to be the most adopted open source enterprise CRM in the world, giving users full control of their data and freedom to own and customise their business solution.
-
-Try out a free fully working [SuiteCRM demo available here](https://suitecrm.com/demo/)
-
-### Contribute [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/salesagility/SuiteCRM/issues)
-
-There are lots of ways to [contribute](https://docs.suitecrm.com/community/) to SuiteCRM
-
-* [Submit bug](https://docs.suitecrm.com/community/raising-issues/) reports and help us [verify fixes](https://docs.suitecrm.com/community/contributing-code/test-pull-requests/) as they are pushed up
-* Review and collaborate [source code](https://github.com/salesagility/SuiteCRM/pulls) changes
-* Join and engage with other SuiteCRM users and developers on the [forums](https://suitecrm.com/suitecrm/forum)
-* [Contribute bug fixes](https://docs.suitecrm.com/community/contributing-code/bugs/)
-* Help [translate](https://docs.suitecrm.com/community/contributing-to-docs/contributing-to-translation/) language packs
-* [Write and improve](https://docs.suitecrm.com/community/contributing-to-docs/) SuiteCRM documentation
-* Signing CLA - Only needs to be done once for all PRs and contributions.
+## поддержи проект
+https://yoomoney.ru/to/410013242088802
 
 
-### Code Contributors
+## Installation
 
-This project exists thanks to all the people who [contribute](https://github.com/salesagility/SuiteCRM/graphs/contributors) and more.
-<a href="https://github.com/salesagility/SuiteCRM/graphs/contributors"><img src="https://opencollective.com/SuiteCRM/contributors.svg?avatarHeight=36&width=890&button=false" /></a>
+Before installation, you must make a backup copy of the system files!
 
-You wanna buy the **core team** a coffee :coffee: or beer :beer:?
-Then consider a small [donation](https://opencollective.com/SuiteCRM/contribute) to help fuel our activities :heart:
+To install, you need to download the latest version of the plugin from the link 
 
+Then in SuiteCRM open the Module Loader (Administration -> Module Loader)
 
-### Security ###
+Download package archive
 
-We take security seriously here at SuiteCRM so if you have discovered a security risk report it by
-emailing [security@suitecrm.com](mailto:security@suitecrm.com). This will be delivered to the product team who handle security issues.
-Please don't disclose security bugs publicly until they have been handled by the security team.
-
-Your email will be acknowledged within 24 hours during the business week (Mon - Fri), and you’ll receive a more
-detailed response to your email within 72 hours during the business week (Mon - Fri) indicating the next steps in
-handling your report.
-
-### Roadmap ### 
-
-View the [Roadmap](https://suitecrm.com/roadmap/) and [LTS](https://suitecrm.com/lts/) for details on our planned features and future direction.
-
-### Support ###
-
-SuiteCRM is an open-source project. If you require help with support then please use our [support forum](https://suitecrm.com/suitecrm/forum/). By using the forums the knowledge is shared with everyone in the community. Our developer and community team members answer questions on the forum daily but it also allows the other members of the community to contribute. If you would like customisations to specifically fit your SuiteCRM needs then please visit the [website](https://suitecrm.com/).
-
-### License [![AGPLv3](https://img.shields.io/github/license/suitecrm/suitecrm.svg)](./LICENSE.txt)
-
-SuiteCRM is published under the AGPLv3 license.
+Click the install button.
 
 
+## Using
+   
+   The use of this module is assumed through the processes module.
+   
+   In the processes module, select the necessary conditions for calling WebHook.
+   
+   In the Actions section, specify the creation of the record and select the Web Hook Request module
+   
+   in the created record, in the URL field, specify the URL for the reverse search.
+   
+   in the fields " 01...100 key "specify the parameter key in the fields" 01...100value " specify the appropriate value (it can be pulled from the linked module)
+   ```
+
+Array
+(
+    [first_name] => Kilburn
+    [last_name] => Micah
+)
 
 
+   ```
+   For the convenience of viewing the execution results, it is also recommended to specify Name, but this is not necessary.
+   
+   In the "Request Type" field, select the json or form-data request type (if the type is not specified, the request will be sent as form data)
+   
+   and to send the request, specify the status "ready to send" (if you do not specify this status, the request will not be executed)
+   
+   If the field is 01...If 100key is empty, then the corresponding value is 01...100 value will not be sent.
+   
+   
+   If you need to specify the value of a field in the url, such as id, then we recommend that you build the request in 2 stages
+   
+   1 at the first stage we collect the necessary data according to the condition and specify the in process status,
+   
+   2 at the second stage, we edit the record in the Web Hook Request module and collect the url field and change the status to " ready to send"
+### Example
+Consider an example:
+you need to send a request to http://0.0.0.0/test/ID_Contact
+with a post array
+
+first_name = First Name Contact
+
+last_name = Last Name Contact
+
+to do this, we create a process in which the target module is Contacts and set the multiple launch checkbox.
+
+![image](http://web-seedteam.ru/wp-content/uploads/2021/04/screenshot-0.0.0.0-2021.04.16-09_27_26.png)
+
+In the Actions section, specify the necessary parameters
+
+Next, we create a 2 process, which when creating an entry in the WEB_HOOKS_REQUEST module
+
+![image](http://web-seedteam.ru/wp-content/uploads/2021/04/screenshot-0.0.0.0-2021.04.16-09_22_34.png)
+
+with the condition that the name of the record matches the name specified in the first process.
+
+in the actions we create CalculateFields at the beginning
+in which we replace the value in the url with ID candidate
+
+### License
+MIT
+
+
+# Вебхуки для SuiteCRM
+
+[Github](https://github.com/SidorkinAlex/SuiteCRMWebHooks) | 
+[Ru](#Вебхуки-для-SuiteCRM) |
+[En](#Webhooks-from-SuiteCRM)
+
+[Установка](#Установка)
+
+## Установка
+
+Перед установкой необходимо сделать резервную копию файлов системы!
+
+Для установки необходимо скачать последную версию плагина по ссылке https://github.com/SidorkinAlex/Opportunities_kanban/releases/download/1.03/Build_1_03.zip
+
+Далее в SuiteCRM открыть Загрузчик модулей (Администрирование -> Загрузчик модулей)
+
+Загрузить архив с пакетом
+
+Нажать кнопку установить.
+
+## Использование
+   
+   Использование данного модуля предполагается через модуль процессы.
+   
+   В модуле процессы выберите необходимые условия для вызова WebHook.
+   
+   В блоке Действия укажите создание записи и выбирете модуль Web Hook Request
+   
+   в создаваемой записи в поле URL укажите URL для обратного выхова
+   
+   в полях "01...100 key" укажите ключ параметра в полях "01...100value" укажите соответствующее значение (его можно подтянуть из связанного модуля)
+   
+   Для удобства просмотра результатов выполнения рекомендуется так же указать Name однако это не обязательно.
+   
+   В поле "Request Type" выберите тип запроса json или form-data (если тип не будет указан то запрос отправится в виде form data)
+   
+   и для отправки запроса укажите статус "ready to send" (если не указать этот статус то запрос не будет выполнен)
+   
+   Если поле 01...100key пусто, то соответствующее значение 01...100 value не будет отправлено.
+   
+   
+   Если вам нужно указать в url значение какого-то поля, например id,то сборку запроса рекомендуется выполнять в 2 этапа
+   
+   1 на первом этапе по условию собираем нужные данные и указываем статус in process,
+   
+   2 на втором этапе резактируем запись в модуле Web Hook Request  и собираем поле url и изменяем статус на "ready to send"
+   
+### Рассмотрим пример
+
+   необходимо отправлять запрос на http://0.0.0.0/test/ID_Contact
+    с пост массивом
+    
+   first_name = First Name Contact
+   
+   last_name = Last Name Contact
+    
+   для этого создаем процесс, в котором целевым модулем является Contacts ставим чекбокс многократный запуск.
+    
+![image](http://web-seedteam.ru/wp-content/uploads/2021/04/screenshot-0.0.0.0-2021.04.16-09_27_26.png)
+
+   В блоке Действия указываем необходимые параметры
+    
+   Далее создаем 2 процесс, который при создании записи в модуле WEBH_HOOKS_REQUEST 
+    
+![image](http://web-seedteam.ru/wp-content/uploads/2021/04/screenshot-0.0.0.0-2021.04.16-09_22_34.png)
+
+   с условием, что Название записи совпадает с назваием указанным в первом процессе.
+    
+   в действиях создаем вначале Calculate Fields
+   в котором заменфяем значение в url на ID candidate
+    
+   далее создаем действие изменение записи в котором меняем статус
+    
