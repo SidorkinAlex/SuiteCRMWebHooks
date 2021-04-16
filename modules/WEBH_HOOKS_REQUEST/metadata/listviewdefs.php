@@ -57,5 +57,11 @@ $listViewDefs[$module_name] = array(
         'id' => 'ASSIGNED_USER_ID',
         'default' => true
     ),
+    'MODIFIED_BY_NAME' =>
+        array(
+            'width' => '10%',
+            'label' => 'LBL_MODIFIED',
+            'default' => true,
+        ),
 
 );

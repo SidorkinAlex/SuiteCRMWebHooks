@@ -43,10 +43,7 @@
 }
 
 global $mod_strings, $app_strings, $sugar_config;
- 
-if(ACLController::checkAccess('WEBH_HOOKS_REQUEST', 'edit', true)){
-    $module_menu[]=array('index.php?module=WEBH_HOOKS_REQUEST&action=EditView&return_module=WEBH_HOOKS_REQUEST&return_action=DetailView', $mod_strings['LNK_NEW_RECORD'], 'Add', 'WEBH_HOOKS_REQUEST');
-}
+
 if(ACLController::checkAccess('WEBH_HOOKS_REQUEST', 'list', true)){
     $module_menu[]=array('index.php?module=WEBH_HOOKS_REQUEST&action=index&return_module=WEBH_HOOKS_REQUEST&return_action=DetailView', $mod_strings['LNK_LIST'],'View', 'WEBH_HOOKS_REQUEST');
 }

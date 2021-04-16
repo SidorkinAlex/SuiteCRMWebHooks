@@ -85,6 +85,9 @@ $viewdefs[$module_name]['DetailView'] = array(
                         'data',
                     ),
                     array(
+                        'url',
+                    ),
+                    array(
                         'key01',
                         'value01',
                     ),
