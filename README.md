@@ -18,7 +18,7 @@ https://yoomoney.ru/to/410013242088802
 
 Before installation, you must make a backup copy of the system files!
 
-To install, you need to download the latest version of the plugin from the link 
+To install, you need to download the latest version of the plugin from the link https://github.com/SidorkinAlex/SuiteCRMWebHooks/releases/download/1.0/Build.zip
 
 Then in SuiteCRM open the Module Loader (Administration -> Module Loader)
 
@@ -102,7 +102,7 @@ MIT
 
 Перед установкой необходимо сделать резервную копию файлов системы!
 
-Для установки необходимо скачать последную версию плагина по ссылке https://github.com/SidorkinAlex/Opportunities_kanban/releases/download/1.03/Build_1_03.zip
+Для установки необходимо скачать последную версию плагина по ссылке https://github.com/SidorkinAlex/SuiteCRMWebHooks/releases/download/1.0/Build.zip
 
 Далее в SuiteCRM открыть Загрузчик модулей (Администрирование -> Загрузчик модулей)
 
